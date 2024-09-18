@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео через YouTube API</title>
+</head>
+<body>
+
+<!-- Контейнер для YouTube-видеоплеера -->
+<div id="player"></div>
+
+<!-- Скрипт для загрузки YouTube API -->
+<script>
+    // Загрузка библиотеки YouTube API
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Переменная для хранения плеера
+    var player;
+
+    // Функция, которую YouTube API вызывает, когда готов к работе
+    function onYouTubeIframeAPIReady() {
+        // Создаем новый объект YouTube плеера
+        player = new YT.Player('player', {
+            height: '390',      // Высота плеера
+            width: '640',       // Ширина плеера
+            videoId: 'njoqC5OJA0U', // Идентификатор YouTube видео
+            events: {
+                'onReady': onPlayerReady,      // Вызовется, когда плеер готов
+                'onStateChange': onPlayerStateChange // Вызовется при изменении состояния плеера
+            }
+        });
+    }
+
+    // Функция, которая вызывается, когда плеер готов
+    function onPlayerReady(event) {
+        // Автоматически воспроизвести видео, когда плеер готов
+        event.target.playVideo();
+    }
+
+    // Функция, которая вызывается при изменении состояния плеера (например, при паузе или воспроизведении)
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            console.log('Видео воспроизводится!');
+        }
+    }
+</script>
+
+</body>
+</html>

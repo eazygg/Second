@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="crysis_2_style.css">
+    <meta charset="UTF-8">
+    <title>Crysis_2</title>
+</head>
+<body>
+<div class="main1">
+    <div class="main">
+        <div class="poster">
+            <h1 class="h1">Crysis 2:Remastered</h1>
+            <div class="image">
+                <p ><img src="http://www.world-art.ru/games/img/converted_images_50000/optimize_a/46646-1-optimize_a.jpg" width="600" height="800" alt="" class="Ava"></p>
+            </div>
+        </div>
+        <div class="treba">
+            Дата выхода: 17 ноя. 2022
+            <br>Жанр: Экшены
+            <br>Разработчик: Crytek, Saber Interactive
+            <br>Издатель: Crytek
+            <br>Язык интерфейса: Русский, Английский
+            <br>
+            <br>Системные требования:
+            <br>ОС: Windows 10 (64-bit)
+            <br>Процессор: Intel(R) Core(TM) i5-3450 / AMD Ryzen 3
+            <br>Оперативная память: 8 GB ОЗУ
+            <br>Видеокарта: NVIDIA GeForce GTX 1050 TI /AMD Radeon 470
+            <br>DirectX: Версии 11
+            <br>Место на диске: 60 GB
+        </div>
+        <div class="download">
+            <form action="https://byxatab.com/index.php?do=download&id=7600" target="_blank">
+                <button class="btn">Скачать торрент</button>
+            </form>
+
+        </div>
+        <div class="Zagolovok">
+            Описание игры:
+        </div>
+        <div class="description">
+            <p>
+                Crysis 2 Remastered – шутер от первого лица, в котором вам предстоит отправиться в новую историю, одев на себя футуристический костюм для борьбы с террористической угрозой. Как вы помните, первая часть этого приключения происходила на острове, где-то на границе Южной Кореи. Теперь события перемещаются в огромный американский мегаполис, который по последним данным подвергся массированной атаке со стороны неизвестной корпорации. Главному герою предстоит оценить обстановку и постараться изменить ход событий, иначе может быть поздно.
+            </p>
+        </div>
+        <div class="Zagolovok">
+            Новое графическое оформление:
+        </div>
+        <div class="description">
+            <p >
+                Главным преимуществом новой версии игрового приключения является возможность оценить классический шутер в новой обертке. Разработчики решили возродить интерес к игровой серии и перерисовали большую часть текстур, обновили визуальные эффекты и подтянули разрешение. Все это стало взаимодополняемым и дало возможность по-новому взглянуть на приключение. Теперь игра выглядит хорошо на современных компьютерах и готова порадовать всех и каждого передовой графикой.
+            </p>
+        </div>
+        <div class="Zagolovok">
+            Начало новой истории:
+        </div>
+        <div class="description">
+            <p >
+                События игры происходят сразу после того, как наемники вернулись с того злосчастного острова. Правда, теперь некоторых из них погубила странная болезнь и главным героем становится совершенно новый персонаж. Он получает в пользование технологический костюм и должен выполнить просьбу умершего героя. Какая именно это просьба мы вам не раскроем, вы об этом уже узнаете сами. Главное выполнять задачи, выживать и не забывать использовать уникальные способности этого боевого костюма.            </p>
+        </div>
+        <div class="Zagolovok">
+            Особенности игры
+        </div>
+        <div class="description">
+            <ul>
+                <li>
+                    Возможность погрузиться в приключение в самой технологической игрой своего времени.
+                </li>
+                <li>
+                    В вашем пользовании окажется костюм, который способен давать силу, невидимость, ловкость и прочие способности владельцу.                </li>
+                <li>
+                    Свобода выбора в прохождении миссий (стелс или экшен).                </li>
+                <li>
+                    Запутанная история, которая намекает на продолжение.                </li>
+                <li>
+                    Передовая графика своего времени.                </li>
+            </ul>
+        </div>
+
+        <div class="trailer">
+            <p>Трейлер</p>
+        </div>
+
+        <div class="youtube">
+            <!-- Контейнер для YouTube-видеоплеера -->
+            <div id="player"></div>
+
+            <!-- Скрипт для загрузки YouTube API -->
+            <script>
+                // Загрузка библиотеки YouTube API
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                // Переменная для хранения плеера
+                var player;
+
+                // Функция, которую YouTube API вызывает, когда готов к работе
+                function onYouTubeIframeAPIReady() {
+                    // Создаем новый объект YouTube плеера
+                    player = new YT.Player('player', {
+                        height: '390',      // Высота плеера
+                        width: '1000',       // Ширина плеера
+                        videoId: 'njoqC5OJA0U', // Идентификатор YouTube видео
+                        events: {
+                            'onReady': onPlayerReady,      // Вызовется, когда плеер готов
+                            'onStateChange': onPlayerStateChange // Вызовется при изменении состояния плеера
+                        }
+                    });
+                }
+
+                // Функция, которая вызывается, когда плеер готов
+                function onPlayerReady(event) {
+                    // Автоматически воспроизвести видео, когда плеер готов
+                    event.target.playVideo();
+                }
+
+                // Функция, которая вызывается при изменении состояния плеера (например, при паузе или воспроизведении)
+                function onPlayerStateChange(event) {
+                    if (event.data == YT.PlayerState.PLAYING) {
+                        console.log('Видео воспроизводится!');
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="screendesc">
+               Скриншоты из игры
+        </div>
+        <div class="">
+            <img src="https://byxatab.com/uploads/posts/2022-11/1668702951_ss-0ed63f13ba29792d243b30c82a63269cb0a5b98a-1920x1080.jpg" class="screen">
+            <img src="https://byxatab.com/uploads/posts/2022-11/1668702968_ss-4b86043dfda96873dc11c9b9d8e83fcc206ff3ec-1920x1080.jpg" class="screen">
+            <img src="https://byxatab.com/uploads/posts/2022-11/1668702969_ss-d2472c989f9da7915ba30d3eec95f556c4536820-1920x1080.jpg" class="screen">
+            <img src="https://vkplay.ru/hotbox/content_files/gallery/2021/09/27/5fe956b6898447c7a978b4b72fa9693e.jpg" class="screen">
+
+        </div>
+
+
+
+        </div>
+</div>
+
+</div>
+</body>
