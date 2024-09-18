@@ -1,0 +1,47 @@
+.title {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    text-align: center;
+    color: #0c0c0c;
+}
+.Game {
+    font-size: 50px;
+    color: #fbfbfb;
+    font-family: Bahnschrift, "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+.border {
+    border: 5px solid #78b8b8;
+    width: 600px;
+    background-color: #1f1f21;
+    height: 490px;
+    display: inline-block;
+    margin: 10px;
+}
+.Ava {
+    margin-top: -15px;
+    width: 600px;
+}
+.body {
+    background-image:url("https://kartinki.pics/uploads/posts/2021-04/1617585076_52-p-fon-dlya-saita-temnii-52.jpg");
+}
+
+.Name {
+    text-align: center;
+}
+
+.genres {
+    font-size: 25px;
+    color: white;
+    font-family: "Roboto", Helvetica Neue, sans-serif;
+    padding-left:10px ;
+}
+.date {
+    font-size: 19px;
+    color: white;
+    padding-left: 5px;
+    font-family: "Roboto", Helvetica Neue, sans-serif;
+}
+.Home {
+    text-align: center;
+
+}
